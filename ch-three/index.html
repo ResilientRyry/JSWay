@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JS Way Practice</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>The JS Way Chapter 3 Ex.</h1>
+    <section>
+      <section class="question">
+        <h3>Following day</h3>
+        <p>Write a program that accepts a day name from the user, then shows the name of the following day. Incorrect inputs must be taken into account.A</p>
+      </section>
+      <section class="answer">
+        <p>Answer</p>
+        <button id="tomorrow"type="button" name="button">What's today?</button>
+        <p id="one"></p>
+      </section>
+    </section>
+    <!-- One -->
+    <section>
+      <section class="question">
+        <h3>Number comparison</h3>
+        <p>Write a program that accepts two numbers, then compares their values and displays an appropriate message in all cases.</p>
+      </section>
+      <section class="answer">
+        <p>Answer</p>
+        <input type="number" id="numOne" name="" >
+        <input type="number" id="numTwo" name="" >
+        <button type="button" id="compare"name="button">Compare</button>
+        <p id="two"></p>
+      </section>
+    </section>
+    <!-- Two -->
+    <section>
+      <section class="question">
+        <h3>Final values</h3>
+        <p>Take a look at the following program.</p>
+        <p>
+          let nb1 = Number(prompt("Enter nb1:"));<br>
+          let nb2 = Number(prompt("Enter nb2:"));<br>
+          let nb3 = Number(prompt("Enter nb3:"));<br>
+
+          if (nb1 > nb2) {<br>
+            nb1 = nb3 * 2;<br>
+            } else {<br>
+              nb1++;<br>
+              if (nb2 > nb3) {<br>
+                nb1 += nb3 * 3;<br>
+              } else {<br>
+                nb1 = 0;<br>
+                nb3 = nb3 * 2 + nb2;<br>
+              }<br>
+            }<br>
+            console.log(nb1, nb2, nb3);<br>
+        </p>
+        <p>Before executing it, try to guess the final values of variables nb1, nb2 and nb3 depending on their initial values. Complete the following table.</p>
+        <p>Check your predictions by executing the program.</p>
+      </section>
+      <section class="answer">
+        <p>Answer</p>
+        <p id="three">
+          <table>
+            <tr>
+              <th>Initial values</th>
+              <th>nb1 final value</th>
+              <th>nb2 final value</th>
+              <th>nb3 final value</th>
+            </tr>
+            <tr>
+              <td>nb1 = nb2 = nb3 = 4</td>
+              <td>0</td>
+              <td>4</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>nb1 = 4, nb2 = 3, nb3 = 2</td>
+              <td>4</td>
+              <td>3</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>nb1 = 2, nb2 = 4, nb3 = 0</td>
+              <td>3</td>
+              <td>4</td>
+              <td>0</td>
+            </tr>
+
+          </table>
+        </p>
+      </section>
+    </section>
+    <!-- Three -->
+    <section>
+      <section class="question">
+        <h3>Number of days in a month</h3>
+        <p>Write a program that accepts a month number (between 1 and 12), then shows the number of days of that month. Leap years are excluded. Incorrect inputs must be taken into account.</p>
+      </section>
+      <section class="answer">
+        <p>Answer</p>
+        <p>Pick a month.</p>
+        <select id="month" class="month">
+          <option value="1">1 - Jan</option>
+          <option value="2">2 - Feb</option>
+          <option value="3">3 - Mar</option>
+          <option value="4">4 - Apr</option>
+          <option value="5">5 - May</option>
+          <option value="6">6 - June</option>
+          <option value="7">7 - July</option>
+          <option value="8">8 - Aug</option>
+          <option value="9">9 - Sept</option>
+          <option value="10">10 - Oct</option>
+          <option value="11">11 - Nov</option>
+          <option value="12">12 - Dec</option>
+        </select>
+        <p id="four">
+
+        </p>
+      </section>
+    </section>
+    <!-- Four -->
+    <section>
+      <section class="question">
+        <h3>Following second</h3>
+        <p>Write a program that asks for a time under the form of three information (hours, minutes, seconds). The program calculates and shows the time one second after. Incorrect inputs must be taken into account.</p>
+        <p> <i>This is not as simple as it seems... Look at the following results to see for yourself:</i> </p>
+        <ul>
+          <li> <i>14h17m59s = > 14h18m0s</i> </li>
+          <li> <i>6h59m59s = > 7h0m0s</i> </li>
+          <li> <i>23h59m59s = > 0h0m0s (midnight)</i> </li>
+        </ul>
+      </section>
+      <section class="answer">
+        <p>Answer</p>
+        <button type="button" id="nextSec"name="button">Start</button>
+
+        <p id="userEntrie">
+
+        </p>
+        <p id="five">
+
+        </p>
+      </section>
+    </section>
+    <!-- Five -->
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

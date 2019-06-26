@@ -1,0 +1,33 @@
+h1{
+  text-align: center;
+}
+section{
+  width: 100%;
+  float: left;
+}
+section section{
+  width: 44.7%;
+  float: left;
+  min-height: 250px;
+  margin: 10px 2.5%;
+}
+.question{
+  border: 2px solid red;
+}
+.answer{
+  border: 2px solid green;
+}
+table{
+  width: 100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td{
+  padding: 5px;
+  text-align: center;
+}
+th{
+  background-color: lightgrey;
+}

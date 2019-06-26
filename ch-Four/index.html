@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JS Way Practice</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>The JS Way Chapter 4 Ex.</h1>
+    <section>
+      <section class="question">
+        <h3>Carousel</h3>
+        <p>Write a program that launches a carousel for 10 turns, showing the turn number each time.</p>
+        <p>When it's done, improve it so that the number of turns is given by the user.</p>
+      </section>
+      <section class="answer">
+        <p>Answer</p>
+        <button type="button" class="decrease" name="button"> < </button>
+        <input type="button" value="Begin"id="begin">
+        <p id="oneA"></p>
+        <button type="button" class="increase" name="button"> > </button>
+        <p>How many turns would you like?</p>
+        <button type="button" class="decrease2" name="button"> < </button>
+        <input type="text" name="" id="car2" placeholder="Number of turns... "value="">
+        <input type="submit" id="submit" value="Submit">
+        <p id="oneB"></p>
+        <button type="button"  class="increase2" name="button"> > </button>
+      </section>
+    </section>
+    <!-- END One -->
+    <section>
+      <section class="question">
+        <h3>Parity</h3>
+        <p>Check the following program that shows even numbers (divisible by 2) between 1 and 10.</p>
+        <p>for (let i = 1; i <= 10; i++) {</p>
+          <p>if (i % 2 === 0) {</p>
+            <p>console.log(`${i} is even`);</p>
+          <p>}</p>
+        <p>}</p>
+        <p>This program uses the modulo operator %, which calculates the remainder after division of one number by another. It's often used to assess number parity.</p>
+        <p>console.log(10 % 2); // 0 because 10 = 5 * 2 + 0</p>
+        <p>console.log(11 % 2); // 1 because 11 = 5 * 2 + 1</p>
+        <p>console.log(18 % 3); // 0 because 18 = 3 * 6 + 0</p>
+        <p>console.log(19 % 3); // 1 because 19 = 3 * 6 + 1</p>
+        <p>console.log(20 % 3); // 2 because 20 = 3 * 6 + 2</p>
+        <p>Improve the program so that it also shows odd numbers. Improve it again to replace the initial number 1 by a number given by the user.</p>
+        <i>This program must show exactly 10 numbers including the first one, not 11 numbers!</i>
+      </section>
+      <section class="answer">
+        <p>Answer</p>
+        <p class="two">
+          <p>let num = document.getElementById('userNum').value</p>
+          <p>for (let i = num; i <= 10; i++) {</p>
+
+            <p>if (i % 2 === 0) {</p>
+
+              <p>console.log(`${i} is even`);</p>
+
+              <p>}else{</p>
+                <p>console.log(`${i} is odd`);</p>
+                <p>}</p>
+
+            <p>}</p>
+        </p>
+        <p class="twoB">
+          <input type="number" id="userNum" max="10"min="0">
+        </p>
+      </section>
+    </section>
+    <!-- END Two -->
+    <section>
+      <section class="question">
+        <h3>Input validation</h3>
+        <p>Write a program that continues to ask the user for a number until the entered number is less than or equal to 100.</p>
+        <p>When you are done with the above, improve the program so that the terminating number is between 50 and 100.</p>
+      </section>
+      <section class="answer">
+        <p>Answer</p>
+        <input type="number" id="userNum2">
+        <p id="three">
+
+        </p>
+      </section>
+    </section>
+    <!-- END Three -->
+    <section>
+      <section class="question">
+        <h3>Multiplication table</h3>
+        <p>Write a program that asks the user for a number, then shows the multiplication table for this number.</p>
+        <p>When you are done, improve the program so it only accepts numbers between 2 and 9 (use the previous exercise as a blueprint).</p>
+      </section>
+      <section class="answer">
+        <p>Answer</p>
+        <input type="number" id="userNum3">
+        <p id="four">
+        </p>
+      </section>
+    </section>
+    <!-- End Four -->
+    <section>
+      <section class="question">
+        <h3>Neither yes nor no</h3>
+        <p>Write a program that plays "neither yes, nor no" with the user. Specifically, the programs asks the user to enter text until either "yes" or "no" is typed, which ends the game.</p>
+      </section>
+      <section class="answer">
+        <p>Answer</p>
+        <button type="button" id='yOrN'name="button">START</button>
+        <p id="five">
+        </p>
+      </section>
+    </section>
+    <!--  End Five -->
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

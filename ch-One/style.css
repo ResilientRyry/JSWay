@@ -1,0 +1,18 @@
+h1{
+  text-align: center;
+}
+section{
+  width: 44.7%;
+  float: left;
+  height: 150px;
+  margin: 10px 2.5%;
+}
+p, h3{
+  margin:10px 10%;
+}
+.question{
+  border: 2px solid red;
+}
+.answer{
+  border: 2px solid green;
+}
