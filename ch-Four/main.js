@@ -132,3 +132,27 @@ function ans5(){
   }
 }
 document.querySelector('#yOrN').addEventListener('click', ans5);
+// Answer 6
+
+function ans6(){
+  let num = document.querySelector('#fbNum').value
+
+  for (var i = 1; i <= num; i++) {
+    let p = document.createElement("p");
+    let text = document.createTextNode(`${i}`);
+    let element = document.getElementById("six");
+
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log('FIZZ BUZZ');
+    }else if (i % 5 === 0) {
+      console.log('BUZZ');
+    }else if (i % 3 === 0) {
+      console.log('FIZZ');
+    }else {
+      console.log(i);
+    }
+    p.appendChild(text);
+    element.appendChild(p);
+  }
+}
+document.querySelector('#fizzbuzz').addEventListener('click', ans6);
