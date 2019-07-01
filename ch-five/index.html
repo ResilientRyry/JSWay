@@ -9,12 +9,18 @@
     <h1>The JS Way Chapter 5 Ex.</h1>
     <section>
       <section class="question">
-        <h3></h3>
-        <p></p>
+        <h3>Improved hello</h3>
+        <p>Complete the following program so that it asks the user for his first and last names, then show the result of the sayHello() function.</p>
+        <p>function sayHello(firstName, lastName) {</p>
+          <p>const message = `Hello, ${firstName} ${lastName}!`;</p>
+          <p>return message;</p>
+          <p>}</p>
+
       </section>
       <section class="answer">
         <p>Answer</p>
-        <p id="oneA">
+        <button type="button" id="hi" name="button">Start</button>
+        <p id="one">
 
         </p>
       </section>
@@ -22,12 +28,39 @@
     <!-- END One -->
     <section>
       <section class="question">
-        <h3></h3>
-        <p></p>
+        <h3>Number squaring</h3>
+        <p>Complete the following program so that the square1() and square2() functions work properly.</p>
+          <p>// Square the given number x</p>
+          <p>function square1(x) {</p>
+          <p>  // TODO: complete the function code</p>
+          <p>}<p>
+
+          <p>// Square the given number x</p>
+          <p>const square2 = x => // TODO: complete the function code</p>
+
+          <p>console.log(square1(0)); // Must show 0</p>
+          <p>console.log(square1(2)); // Must show 4</p>
+          <p>console.log(square1(5)); // Must show 25<p>
+
+          <p>console.log(square2(0)); // Must show 0</p>
+          <p>console.log(square2(2)); // Must show 4</p>
+          <p>console.log(square2(5)); // Must show 25</p>
+          <p>When it's done, update the program so that it shows the square of every number between 0 and 10.</p>
+          <p><i>Writing 10 dumb calls to square() is forbidden! You know how to repeat statements, don't you? ;)</i></p>
       </section>
       <section class="answer">
         <p>Answer</p>
-        <p class="two">
+        <section>
+          <p>function square1(x) {</p>
+          <p>  x *= x</p>
+          <p>  return x</p>
+          <p>}<p>
+        </section>
+        <section>
+          <p>const square2 = x => x *= x</p>
+        </section>
+        <button type="button" id="update" name="button">Show Results</button>
+        <p id="two">
 
         </p>
       </section>
@@ -35,12 +68,16 @@
     <!-- END Two -->
     <section>
       <section class="question">
-        <h3></h3>
-        <p></p>
-        <p></p>
+        <h3>Minimum of two numbers</h3>
+        <p>Let's pretend the JavaScript Math.min() function doesn't exist. Complete the following program so that the min() function returns the minimum of its two received numbers.</p>
+        <p>// TODO: write the min() function</p>
+        <p>console.log(min(4.5, 5)); // Must show 4.5</p>
+        <p>console.log(min(19, 9));  // Must show 9</p>
+        <p>console.log(min(1, 1));   // Must show 1</p>
       </section>
       <section class="answer">
         <p>Answer</p>
+        <button type="button" id="min" name="button">Run function</button>
         <p id="three">
 
         </p>
@@ -49,12 +86,18 @@
     <!-- END Three -->
     <section>
       <section class="question">
-        <h3></h3>
-        <p></p>
-        <p></p>
+        <h3>Calculator</h3>
+        <p>Complete the following program so that it offers the four basic arithmetical operations: addition, subtraction, multiplication and division. You can use either a function declaration or a function expression.</p>
+        <p>// TODO: complete program</p>
+
+        <p>console.log(calculate(4, "+", 6));  // Must show 10</p>
+        <p>console.log(calculate(4, "-", 6));  // Must show -2</p>
+        <p>console.log(calculate(2, "*", 0));  // Must show 0</p>
+        <p>console.log(calculate(12, "/", 0)); // Must show Infinity</p>
       </section>
       <section class="answer">
         <p>Answer</p>
+        <button type="button" id="calc" name="button">Calculate</button>
         <p id="four">
         </p>
       </section>
@@ -62,28 +105,30 @@
     <!-- End Four -->
     <section>
       <section class="question">
-        <h3></h3>
-        <p></p>
+        <h3>Circumference and area of a circle</h3>
+        <p>Write a program containing two functions to calculate the circumference and area of a circle defined by its radius. Test it using user input.</p>
+        <p>Here are some tips for solving this exercise:</p>
+        <ul>
+          <li>Circumference and area calculation formulas should be part of your secondary school memories... Or a Google click away :)</li>
+          <li>The value of number π (Pi) is obtained with Math.PI in JavaScript.</li>
+          <li>You might want to use the exponentiation operator ** to perform computations.</li>
+        </ul>
+        <p>console.log(2 ** 3); // 8: 2 * 2 * 2</p>
+        <p>console.log(3 ** 2); // 9: 3 * 3</p>
       </section>
       <section class="answer">
         <p>Answer</p>
-        <p id="five">
+        <button type="button" id="circ" name="button">Get Circumference</button>
+        <button type="button" id="area" name="button">Get Area</button>
+        <input type="number" id="radius">
+        <p id="fiveA">
+        </p>
+        <p id="fiveB">
         </p>
       </section>
     </section>
     <!--  End Five -->
-    <section>
-      <section class="question">
-        <h3></h3>
-        <p></p>
-      </section>
-      <section class="answer">
-        <p>Answer</p>
-        <p id="six">
-        </p>
-      </section>
-    </section>
 
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
