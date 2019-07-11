@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+}
+
+section {
+    width: 100%;
+    float: left;
+}
+
+section section {
+    width: 44.7%;
+    float: left;
+    min-height: 250px;
+    margin: 10px 2.5%;
+}
+
+.question {
+    border: 2px solid red;
+}
+
+.answer {
+    border: 2px solid green;
+}
